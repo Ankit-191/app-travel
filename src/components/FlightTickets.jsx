@@ -9,10 +9,10 @@ const FlightTickets = () => {
         <section className='bg_darkblue'>
             <Container>
                 <Row className='pt-5'>
-                    <Col md={6} className='p-4 d-flex flex-column align-items-center'>
+                    <Col md={6} className='p-4'>
                         <p className='ff_montserrat fw_700 fs_40 cl_white w_450'>Book Popular Flight Tickets</p>
                         <p className='ff_montserrat fw_400 fs_16 cl_graylight w_450 mb-4'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                        <img src={popularflight} alt="Air Delivery"/>
+                        <img src={popularflight} alt="Air Delivery" className='w_100 '/>
                     </Col>
                     <Col md={6} className='pb-5'>
                         <img src={ecnomy} alt="" className='w-100'/>

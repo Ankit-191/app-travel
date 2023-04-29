@@ -166,7 +166,7 @@
 
 }
 
-.z_neg2{
+.z_neg2 {
   z-index: -2;
 }
 
@@ -204,9 +204,6 @@
   border-radius: 56px;
 }
 
-
-
-
 .nav-tabs .nav-link.active {
   background-color: #313EF7 !important;
   color: white !important;
@@ -235,11 +232,38 @@
   font-size: 18px !important;
   color: #030522 !important;
   padding: 16px 39px !important;
+  position: relative !important;
+}
+
+.nav-tabs .nav-link::after {
+  content: ' ';
+  position: absolute;
+  width: 4px;
+  right: -4px;
+  height: 50%;
+  border-left: 1px solid #F3F4F6;
+}
+
+.dotline_before::before {
+  content: ' ';
+  position: absolute;
+  left: 19px;
+  top: 29px;
+  width: 10px;
+  height: 64%;
+  z-index: -1;
+  border-left: 2px dashed #E5E7EB;
+}
+
+.outlineimg {
+  border-radius: 200px;
+  outline: 15px solid rgba(255, 255, 255, 0.3);
+  outline-offset: -15px;
 }
 
 .our_box {
   background: #FFFFFF;
-  box-shadow: 0px 100px 200px rgba(1, 23, 54, 0.1);
+  box-shadow: 0px 30px 15px rgba(1, 23, 54, 0.1);
   border-radius: 185px;
   height: 380px;
   max-width: 300px;
@@ -288,14 +312,14 @@ ul .bluecircle {
 .travelars_box {
   background: #FFFFFF;
   border-radius: 213px;
-  box-shadow: 5px 70px 70px rgba(1, 23, 54, 0.05);
+  box-shadow: 0px 30px 40px rgba(1, 23, 54, 0.05);
   width: 282px;
   height: 420px;
 }
 
 .feedbackbox {
   background: #FFFFFF;
-  box-shadow: 0px 100px 200px rgba(1, 23, 54, 0.1);
+  box-shadow: 0px 20px 20px rgba(1, 23, 54, 0.1);
   border-radius: 20px;
   padding: 30px 21px;
 }
@@ -316,11 +340,26 @@ ul .bluecircle {
   justify-content: space-between;
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
+  width: 40%;
+}
+
+::placeholder {
+  font-family: 'Rubik',
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #AEB5BF;
 }
 
 .inputtext {
   border: none;
   outline: none;
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #AEB5BF;
 }
 
 .btn_sub {
@@ -429,14 +468,18 @@ ul .bluecircle {
 }
 
 @media (max-width:1024px) {
-   .text_aviation {
-     letter-spacing: 0.4em;
-     font-size: 110px;
-     opacity: 0.5;
-     top: -20px;
-     color: #06072B;
-     text-shadow: 0 0 3px white;
-   }
+  .text_aviation {
+    letter-spacing: 0.4em;
+    font-size: 110px;
+    opacity: 0.5;
+    top: -20px;
+    color: #06072B;
+    text-shadow: 0 0 3px white;
+  }
+
+  .emailinput {
+    width: 70%;
+  }
 }
 
 @media (max-width:992px) {
@@ -518,6 +561,14 @@ ul .bluecircle {
     color: #06072B;
     text-shadow: 0 0 3px white;
   }
+
+  .emailinput {
+    width: 99%;
+  }
+
+  .w_100 {
+    width: 100%;
+  }
 }
 
 
@@ -537,12 +588,12 @@ ul .bluecircle {
   }
 }
 
-.airoplaneani{
+/* .airoplaneani{
   animation: airoplane 6s ease-in alternate;
   position: relative;
-}
+} */
 
-@keyframes airoplane {
+/* @keyframes airoplane {
   0% {
     width: 0%;
     top: -200px;
@@ -570,8 +621,59 @@ ul .bluecircle {
     transform: rotate(60deg) scale(1.5);
 
   }
+} */
+
+.airoplaneani {
+  animation: airoplane 6s ease-in alternate;
+  position: relative;
 }
-.shadow_position{
+
+@keyframes airoplane {
+  0% {
+    width: 0%;
+    top: -100px;
+    left: 100%;
+    transform: rotate(50deg);
+  }
+
+  40% {
+    transform: rotate(20deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+  }
+}
+
+.shadow_position {
+  animation: shadow 6s linear alternate;
+}
+
+@keyframes shadow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+/* .shadow_position{
   animation: shadow 6s linear alternate;
 }
 @keyframes shadow {
@@ -591,4 +693,4 @@ ul .bluecircle {
     opacity: 0;
   }
   
-}
+} */

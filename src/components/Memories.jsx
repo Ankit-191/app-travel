@@ -8,7 +8,7 @@ import Slider from "react-slick";
 
 const Memories = () => {
      var settings = {
-        dots: true,
+
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -46,29 +46,29 @@ const Memories = () => {
             <p className='ff_montserrat fw_700 fs_40 cl_011736 text-center pb-sm-4'>Make memories with us</p>            
 
              <Slider {...settings}>
-      <div className='d-flex justify-content-center'>
-        <img src={memories1} alt="" />
+      <div className='d-flex justify-content-center px-2'>
+        <img src={memories1} alt="" className='w-100 outlineimg'/>
       </div>
-      <div className='d-flex justify-content-center'>
-        <img src={memories2} alt="" className='mt-5' />
+      <div className='d-flex justify-content-center px-2'>
+        <img src={memories2} alt="" className='mt-5 w-100 outlineimg' />
       </div>
-      <div className='d-flex justify-content-center'>
-        <img src={memories3} alt="" />
+      <div className='d-flex justify-content-center px-2'>
+        <img src={memories3} alt="" className='w-100 outlineimg'/>
       </div>
-      <div className='d-flex justify-content-center'>
-        <img src={memories4} alt="" className='mt-5'/>
+      <div className='d-flex justify-content-center px-2'>
+        <img src={memories4} alt="" className='mt-5 w-100 outlineimg'/>
       </div>
-      <div className='d-flex justify-content-center'>
-        <img src={memories1} alt="" />
+      <div className='d-flex justify-content-center px-2'>
+        <img src={memories1} alt="" className='w-100 outlineimg'/>
       </div>
-      <div className='d-flex justify-content-center'>
-        <img src={memories2} alt="" className='mt-5' />
+      <div className='d-flex justify-content-center px-2'>
+        <img src={memories2} alt="" className='mt-5 w-100 outlineimg'/>
       </div>
-      <div className='d-flex justify-content-center'>
-        <img src={memories3} alt="" />
+      <div className='d-flex justify-content-center px-2'>
+        <img src={memories3} alt="" className='w-100 outlineimg'/>
       </div>
-      <div className='d-flex justify-content-center'>
-        <img src={memories4} alt="" className='mt-5'/>
+      <div className='d-flex justify-content-center px-2'>
+        <img src={memories4} alt="" className='mt-5 w-100 outlineimg'/>
       </div>
     </Slider>
         </Container>

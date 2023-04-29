@@ -71,7 +71,7 @@ const Hero = () => {
             <img className='z-index_1 airoplaneani' src={airoplane} alt="airoplane" />
             <img className='shadow_position w-100 ' src={shadow} alt="shadow"/>
           </div>          
-            <p className='ff_montserrat fw_700 fs_48 cl_white pt-4 mb-2'>Travel around the world</p>
+            <p className='ff_montserrat fw_700 fs_48 cl_white pt-4 mb-2'>Travel Around The World</p>
             <p className='ff_montserrat fw_400 fs_12 cl_white mb-5 pb-5'>One of the advantages of being disorganized is that one is always having surprising discoveries</p>
           </div>
        </Container>

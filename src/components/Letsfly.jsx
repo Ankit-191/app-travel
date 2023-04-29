@@ -6,7 +6,7 @@ import Bluebtn from './Bluebtn'
 const Letsfly = () => {
   return (
     <>
-        <Container className='py-5'>
+        <Container className='pb-5'>
             <Row className='py-5 align-items-center'>
                 <Col lg={6}>
                     <img src={newyorkgroup} alt="newyork" className='w-100'/>                                     
@@ -16,7 +16,7 @@ const Letsfly = () => {
                         <p className='ff_montserrat fw_900 fs_20 cl_bluelight mb-3'>Let’s Fly</p><p className='line ms-2'></p>
                     </div>
                     <p className='ff_montserrat fw_700 fs_32 cl_lightblack mb-4'>It’s one of the leading online flight booking platforms in the world</p>
-                    <ul className='pt-3'>
+                    <ul className='pt-3 dotline_before position-relative'>
                         <li className='ff_montserrat fw_500 fs_16 cl_lightblack bluecircle'>
                             Contrary to popular belief, Lorem Ipsum is not simply random text
                         </li>

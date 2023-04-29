@@ -12,7 +12,6 @@ import Slider from "react-slick";
 
 const Besttravelars = () => {
     var best = {
-        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 4,

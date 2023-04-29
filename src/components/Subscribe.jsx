@@ -16,7 +16,6 @@ const Subscribe = () => {
                 </div>
             </Container>    
         </section>
-        
     </>
   )
 }

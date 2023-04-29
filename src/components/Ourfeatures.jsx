@@ -41,7 +41,7 @@ const Ourfeatures = () => {
        <Container className='overflow-hidden'>
             <h2 className='text-center ff_montserrat fw_700 fs_40 cl_lightblack pt-5'>Our Features</h2>
             <Slider {...ourfeature}>
-      <div className='pt-4 px-3 mx-1'>
+      <div className='pt-4 px-3 mx-1 pb-5'>
         <div  className='our_box d-flex flex-column align-items-center p_28_21_41 mt-5'>
                         <span>
                         <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -88,7 +88,7 @@ const Travelsheet = () => {
           </div>
         </Row>
       </Tab>
-      <Tab eventKey="busniness" title="Busniness ">
+      <Tab eventKey="busniness" title="Busniness">
          <Row>
           <Col lg={3} sm={6} className='pt-4 pt-lg-0'>
                 <div className='d-flex pb-4 pt_40   ps-3 ps-lg-0 justify-content-lg-center '>
